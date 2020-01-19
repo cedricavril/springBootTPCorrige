@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "7e831109-8a3f-45d6-8bde-eb41a3882cab",
+		"name": "EPSI - CRUD d'entreprises",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create entreprise",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "raisonSociale",
+							"value": "un nom d'entreprise",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/entreprise",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprise"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "salarie exception",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nom",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/salarie",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"salarie"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "create salarie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "nom salarié",
+							"type": "text"
+						},
+						{
+							"key": "prenom",
+							"value": "prénom salarié",
+							"type": "text"
+						},
+						{
+							"key": "idEntreprise",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/salarie",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"salarie"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "show entreprise 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/entreprise/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprise",
+						"1"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "show entreprise \"un nom d'entreprise\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "raisonSociale",
+							"value": "un nom d'entreprise",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/entreprise/testavecnomdentreprise",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprise",
+						"testavecnomdentreprise"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "update entreprise 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "raisonSociale",
+							"value": "un autre nom d'entreprise",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/entreprise/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprise",
+						"1"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "delete entreprise 1 (and the salaries in it)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/entreprise/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprise",
+						"0"
+					]
+				},
+				"description": "POST (création)"
+			},
+			"response": []
+		},
+		{
+			"name": "show entreprises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/entreprises",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"entreprises"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
