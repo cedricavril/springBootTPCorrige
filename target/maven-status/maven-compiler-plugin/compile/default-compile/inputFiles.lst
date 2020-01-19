@@ -1,0 +1,7 @@
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/otherpackage/Application.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/entities/Entreprise.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/entities/Adresse.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/controllers/HelloController.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/repositories/EntrepriseRepository.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/entities/Salarie.java
+/home/cedric/SpringProjects/projet_JPA_corrige/gs-spring-boot-initial/src/main/java/com/example/springboot/entities/Salaire.java
