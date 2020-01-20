@@ -15,7 +15,7 @@ J'en ai pas ajouté des masses c'est vraiment le strict minimum, le projet est t
 
 Je sais pas trop si c'est la bonne manière de faire pour les jointures d'entités dans les repo, mais ça a l'air de fonctionner.
 
-Si quelqu'un est motivé pour faire un topo (en langage humain) sur les étapes pour arriver à ça sachant que j'étais québlo quand il créait le TP corrigé from scratch je prends, pas grave sinon no souçaille.
+Si quelqu'un est motivé pour faire un topo (en langage humain) sur les étapes pour arriver à ça sachant que j'étais bloqué quand il créait le TP corrigé from scratch je prends, pas grave sinon no souçaille.
 
 Merci de le surcorriger/l'améliorer en me le signalant.
 
